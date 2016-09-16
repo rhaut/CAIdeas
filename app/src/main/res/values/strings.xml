@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Posted</string>
+    <string name="edit_username_hint">Username</string>
+    <string name="edit_password_hint">Password</string>
+    <string name="button_login">Login</string>
+    <string name="edit_password_verify_hint">Retype Password</string>
+    <string name="button_register">Register</string>
+</resources>
