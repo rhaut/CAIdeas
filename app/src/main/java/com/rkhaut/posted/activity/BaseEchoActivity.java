@@ -2,15 +2,15 @@ package com.rkhaut.posted.activity;
 
 import android.util.Log;
 
-import com.rkhaut.posted.emission.CreateGroup;
-import com.rkhaut.posted.emission.DeleteGroup;
-import com.rkhaut.posted.emission.JoinSubgroup;
-import com.rkhaut.posted.emission.LeaveSubgroup;
-import com.rkhaut.posted.emission.Login;
-import com.rkhaut.posted.emission.Refresh;
-import com.rkhaut.posted.emission.Register;
+import com.rkhaut.posted.receiver.CreateGroupReceiver;
+import com.rkhaut.posted.receiver.DeleteGroupReceiver;
+import com.rkhaut.posted.receiver.JoinSubgroupReceiver;
+import com.rkhaut.posted.receiver.LeaveSubgroupReceiver;
+import com.rkhaut.posted.receiver.LoginReceiver;
+import com.rkhaut.posted.receiver.RefreshReceiver;
+import com.rkhaut.posted.receiver.RegisterReceiver;
 
-public abstract class BaseEchoActivity extends BaseServiceActivity implements Login.Receiver, Register.Receiver, Refresh.Receiver, CreateGroup.Receiver, JoinSubgroup.Receiver, LeaveSubgroup.Receiver, DeleteGroup.Receiver {
+public abstract class BaseEchoActivity extends BaseServiceActivity implements LoginReceiver, RegisterReceiver, RefreshReceiver, CreateGroupReceiver, JoinSubgroupReceiver, LeaveSubgroupReceiver, DeleteGroupReceiver {
 
     private static final String TAG = "Echo";
 
